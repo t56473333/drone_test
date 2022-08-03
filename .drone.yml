@@ -5,9 +5,6 @@ steps:
 - name: dron_test
   image: golang:alpine
   commands:
-       - echo $$KEY
-       - pwd
-       - ls
        - CGO_ENABLED=0 GOOS=linux go build -a -installsuffix cgo -o app .
        - ./app
 # - name: build_image

@@ -9,6 +9,7 @@ steps:
 - name: docker
   image: plugins/docker
   settings:
+    dockerfile: .
     username: t56473333
 #       from_secret: docker_user
     password: yv5vbw9Mx-mBB:n

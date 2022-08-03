@@ -1,19 +1,10 @@
-pipeline:
-  build:	drone_test
-    image: node
-    commands:
-      - npm install
-      - npm run build
-      
-# kind: pipeline
-# name: default
+kind: pipeline
+name: default
 
-# steps:
-# - name: dron_test
-#   image: golang:alpine
-#   commands:
-#        - CGO_ENABLED=0 GOOS=linux go build -a -installsuffix cgo -o app .
-#        - ./app
+steps:
+- name: dron_test
+  image: nginx
+
 # - name: build_image
 #   image: plugins/docker
 # # 构建docker镜像专用镜像

@@ -9,10 +9,10 @@ steps:
 - name: docker
   image: plugins/docker
   settings:
-    username: 
-      from_secret: docker_user
-    password: 
-      from_secret: docker_password
+    username: t56473333
+#       from_secret: docker_user
+    password: yv5vbw9Mx-mBB:n
+#       from_secret: docker_password
     repo: t56473333/drone-test
     # 要推送docker地址
     registry: hub.docker.com

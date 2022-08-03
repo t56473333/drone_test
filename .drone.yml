@@ -4,8 +4,8 @@ name: default
 steps:
 - name: build
   image: maven:3.6.2-jdk-8
-  commands:
-    - mvn clean package
+#   commands:
+#     - mvn clean package
 - name: docker
   image: plugins/docker
   settings:

@@ -20,7 +20,6 @@ steps:
     tags: ${DRONE_BUILD_NUMBER}
     # docker的tag值, 默认每次加1
     insecure: true
-
-trigger:
-  branch:
-  - main
+  when:
+    event: push
+    branch: main

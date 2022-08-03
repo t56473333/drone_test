@@ -3,7 +3,7 @@ name: default
 
 steps:
 - name: build
-  image: maven:3.6.2-jdk-8
+  image: nginx
 #   commands:
 #     - mvn clean package
 - name: docker
